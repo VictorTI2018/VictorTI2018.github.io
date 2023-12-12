@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Inicio navbar -->
+    <header id="navbar">
+        <h2>Victor Hugo</h2>
+        <nav>
+            <ul id="navbar-list">
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fim navbar -->
+
+
+    <main>
+        <!-- Inicio Banner-->
+        <div id="banner">
+            <div id="banner-info">
+                <h1>Olá, sejá bem vindo ao meu Portfolio</h1>
+                <img src="./imgs/perfil.jpg" alt="Avatar" />
+                <p>Aqui vou monstrar um pouco das minhas habilidades!</p>
+            </div>
+        </div>
+        <!-- Fim Banner-->
+    </main>
+    <!-- Inicio Sobre-->
+    <section id="sobre">
+        <h2>Um pouco sobre o meu jeito</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+
+        </p>
+    </section>
+    <!-- FIM Sobre-->
+
+    <!-- Inicio Skills-->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="skills-container">
+                <img src="./imgs/backend.jpg" alt="Backend">
+                <h3>Titulo da Seção</h3>
+                <p>descrição sobre as habilidades</p>
+            </div>
+            <div class="skills-container central">
+                <img src="./imgs/backend.jpg" alt="Backend">
+                <h3>Titulo da Seção</h3>
+                <p>descrição sobre as habilidades</p>
+            </div>
+            <div class="skills-container">
+                <img src="./imgs/backend.jpg" alt="Backend">
+                <h3>Titulo da Seção</h3>
+                <p>descrição sobre as habilidades</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Skills-->
+
+    <!-- Inicio Footer-->
+    <footer>
+        <h2>Entrar em contato</h2>
+        <p>Caso queira me contratar para algum serviço</p>
+        <form id="contato">
+            <input type="text" name="nome" placeholder="Seu nome..." class="input-control">
+            <input type="email" name="email" placeholder="Seu email..." class="input-control">
+            <textarea name="mensgaem" id="" cols="30" rows="10" class="input-textarea"></textarea>
+            <button id="submit" class="btn btn-blocked btn-send">Enviar</button>
+        </form>
+        <div class="rodape">
+            <p class="rodape-titulo">&copy; 2023 Desenvolvido por <span class="detail">Victor Hugo</span></p>
+            <nav>
+                <ul>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Fim Footer-->
+
+</body>
+
+</html>
