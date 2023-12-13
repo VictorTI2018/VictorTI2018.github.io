@@ -12,6 +12,30 @@ h2 {
     font-size: 30px;
 }
 
+#back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0a4aed;
+    text-decoration: none;
+    border: none;
+}
+
+#back-to-top::after {
+    content: "↑";
+    font-size: 32px;
+    color: #FFF;
+    transition: margin-top 250ms;
+}
+#back-to-top:hover::after {
+    margin-top:-8px;
+}
 
 #navbar {
     background-color: #066ad3;
@@ -53,7 +77,7 @@ h2 {
     background-size: cover;
     display: flex;
     align-items: center;
-} 
+}
 
 #banner-info {
     width: 40%;
@@ -130,7 +154,7 @@ h2 {
 }
 
 .skills-container h3 {
-    color:#066ad3;
+    color: #066ad3;
     font-size: 24px;
 }
 
@@ -165,13 +189,15 @@ footer form {
     margin-right: auto;
 }
 
-footer .input-control, footer .input-textarea {
+footer .input-control,
+footer .input-textarea {
     border: none;
     padding: 15px;
     margin-bottom: 10px;
     width: 100%;
     display: block;
 }
+
 .btn-blocked {
     width: 100%;
 }
@@ -202,19 +228,19 @@ footer .input-control, footer .input-textarea {
 }
 
 .rodape ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .rodape li {
-	display: inline-block;
-	margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .rodape a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .rodape a:hover {
@@ -223,7 +249,9 @@ footer .input-control, footer .input-textarea {
 
 @media(max-width: 450px) {
 
-    p, input, textarea {
+    p,
+    input,
+    textarea {
         font-size: 1.2rem;
     }
 
@@ -232,7 +260,7 @@ footer .input-control, footer .input-textarea {
         position: fixed;
         top: 0;
         width: 100%;
-        
+
     }
 
     #navbar h2 {
@@ -259,11 +287,11 @@ footer .input-control, footer .input-textarea {
         width: 100%;
     }
 
-    #banner-info h1   {
-       font-size: 1.2rem;
+    #banner-info h1 {
+        font-size: 1.2rem;
     }
 
-    #banner-info p   {
+    #banner-info p {
         font-size: 1rem;
     }
 
@@ -283,7 +311,7 @@ footer .input-control, footer .input-textarea {
     }
 
 
-    .skills-container{
+    .skills-container {
         padding: 25px
     }
 
